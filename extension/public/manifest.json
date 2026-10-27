@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "RoleFit",
+  "description": "Every resume, tailored to the role.",
+  "version": "0.1.0",
+  "action": { "default_title": "Open RoleFit" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "permissions": ["sidePanel", "storage", "activeTab", "scripting"],
+  "host_permissions": ["http://localhost:8000/*"]
+}
